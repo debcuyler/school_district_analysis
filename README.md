@@ -5,7 +5,15 @@ Maria has asked me to help her analyze, clean and group student and school data 
 ## Results
 - How is the district summary affected? The district summary report was virtually unchanged by removing the Thomas High School math and reading scores for the 9th grade. As you can see in between the two images below, there is very little change before and after removing the scores
 
+![Original District Summary](https://user-images.githubusercontent.com/80215894/113624090-344ba700-962d-11eb-967f-f629f1f16af9.png)
+![Revised District Summary](https://user-images.githubusercontent.com/80215894/113624115-3877c480-962d-11eb-9697-f363b27a07cc.png)
+
 - How is the school summary affected? The school summary is unchanged for all schools except for Thomas High School. When including the 9th grade students in the summary, the percentage passing dropped significantly for Thomas High School for Math, Reading and Overall passing. This is due to including the number of 9th graders in the percentage but without having any scores. Once the Thomas High School percentages were refactored to include only 10th thru 12th grade, the percentages were mostly unchanged from when the 9th grade scores were included in the original analysis.
+ 
+![Thomas High School with NaN's](https://user-images.githubusercontent.com/80215894/113624626-dec3ca00-962d-11eb-8789-a22579fb594f.png)
+
+![Thomas High School without 9th graders](https://user-images.githubusercontent.com/80215894/113624638-e1262400-962d-11eb-9b7f-ca7d349aae16.png)
+
 - How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools? When we changed the 9th grade students scores to NaN(not a number), Thomas High School ranking went from being a top 5 school to being closer to a bottom performing school. Once the scores were refactored completely without the 9th grade scores, they are included in the top 5 schools again.
 - How does replacing the ninth-grade scores affect the following:
     - Math and reading scores by grade: There was no effect on the math and reading scores by grade since each grade is contained within own scoreing. Thomas High School was 
